@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./code.js"></script>     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head> 
+     
+    <title>Pokedex</title>
+</head>
+<body>
+    <img class="slogan-1" src="images/SLOGAN.png" />
+    <div class="container">
+ 
+    <div class="control">
+    <div class="control d-flex justify-content-center">
+        <div class="select is-rounded  is-primary">
+ 
+          <select id="Selector">
+            <option value="">Elige el tipo de Pokémon</option>
+            <option value="grass" style="background-color: lightgreen; color: black;">Planta</option>
+            <option value="water" style="background-color: lightblue; color: black;">Agua</option>
+            <option value="fire" style="background-color: orangered; color: white;">Fuego</option>
+            <option value="electric" style="background-color: yellow; color: black;">Eléctrico</option>
+            <option value="poison" style="background-color: purple; color: white;">Veneno</option>
+            <option value="normal" style="background-color: lightgray; color: black;">Normal</option>
+            <option value="flying" style="background-color: lightblue; color: black;">Volador</option>
+            <option value="psychic" style="background-color: fuchsia; color: black;">Psíquico</option>
+            <option value="fairy" style="background-color: lightpink; color: black;">Hada</option>
+          </select>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container">
+        <div id="pokemon-container" class="row"></div>
+        <div class="row">
+          <div class="col-md-12 text-center mt-4">
+            <button id="prev-button" class="btn btn-primary mr-2" disabled>Prev</button>
+            <button id="next-button" class="btn btn-primary">Next</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
