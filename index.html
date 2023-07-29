@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head> 
      
-    <title>Pokedex</title>
+<title>Pokedex</title>
 </head>
 <body>
     <img class="slogan-1" src="images/SLOGAN.png" />
@@ -20,7 +20,7 @@
  
     <div class="control">
     <div class="control d-flex justify-content-center">
-        <div class="select is-rounded  is-primary">
+        <div class="select is-rounded is-primary">
  
           <select id="Selector">
             <option value="">Elige el tipo de Pokémon</option>
@@ -35,6 +35,18 @@
             <option value="fairy" style="background-color: lightpink; color: black;">Hada</option>
           </select>
         </div>
+      </div>
+    </div>
+
+    <!-- Agregar el campo de entrada para el buscador -->
+    <div class="field has-addons d-flex justify-content-center mt-3">
+      <div class="control">
+        <input id="search-input" class="input" type="text" placeholder="Buscar Pokémon">
+      </div>
+      <div class="control">
+        <a id="search-button" class="button is-primary">
+          Search
+        </a>
       </div>
     </div>
       
